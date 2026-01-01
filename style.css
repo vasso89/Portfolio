@@ -1,0 +1,157 @@
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(255, 255, 255);
+	font-size: 1.3rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main {
+		max-width: 1200px;
+		 margin: 0 auto;
+		 padding: 0 1rem;
+}
+img {
+	max-width: 350px;
+	border: 2px solid #000;
+	border-radius: 15px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	text-align: center;
+	font-weight: 500;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 500;
+}
+#myprojects h2 {
+	margin: 2rem;
+	
+}
+.navbar ul {
+	display: flex;
+	gap: 100px;
+	justify-content: center;
+}
+
+.navbar a:focus {
+	outline: 2px solid #0066cc;
+}
+
+#aboutme {
+	padding: 2rem 1rem;
+	display:flex;
+	gap: 50px;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 2px solid #e0e0e0;
+	border-radius: 15px;
+}
+
+.projects-grid {
+	padding: 2rem 1rem;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 2.5rem; 
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	border: 1px solid #e0e0e0;
+	border-radius: 15px;
+	padding: 15px;
+	transition: transform 0.3s
+}
+.card:hover {
+	transform: translateY(-5px)
+}
+.card:focus { 
+	outline: 2px solid #0066cc;
+ }
+.links {
+	margin-top: auto;
+	
+}
+.links a {
+	padding-left: 15px;
+	color: #0066cc;
+}
+.links a:hover {
+	color: #004499;
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #888;
+		text-align: center;
+}
+  .card img {
+    max-width: 100%;
+		max-height: 300px;
+		object-fit: cover;
+		border-radius: 15px;
+  }
+
+
+
+
+/*  для планшетов */
+@media (max-width:1280px) {
+
+	.navbar ul {
+	display: flex;
+	gap: 60px;
+	justify-content: center;
+	
+}
+
+.projects-grid {
+	grid-template-columns: 1fr 1fr;
+
+	
+}
+#aboutme img{
+width: 100%;
+}
+
+
+
+}
+
+
+/* для мобильных экранов */
+
+@media (max-width:768px) {
+
+		.navbar ul {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+		}
+
+.projects-grid {
+	grid-template-columns: 1fr;
+
+
+}
+#aboutme img{
+width: 100%;
+}
+
+
+}
+
