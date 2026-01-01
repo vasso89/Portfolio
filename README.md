@@ -3,7 +3,7 @@
 Collection of my frontend development projects.
 
 ## 🚀 Live Demo:
-https://vasso89.github.io/portfolio/
+https://vasso89.github.io/Portfolio/
 
 ## 🔧 Technologies Used:
 - Semantic HTML5
