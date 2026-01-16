@@ -4,18 +4,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Portfolio of Vasily - Beginner Frontend Developer. HTML5, CSS3, Responsive Design. View projects and get in touch.">
 	<title>Portfolio vasso89</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
+	<div class="language-switcher">
+		<a href="index.html" class="lang-btn active">EN</a>
+		<a href="index-ru.html" class="lang-btn">РУ</a>
+	</div>
 	<header>
 		<h1>My Portfolio</h1>
 		<nav aria-label="Main navigation" class="navbar">
 			<ul>
 				<li><a href="#aboutme">About me</a></li>
-				<li><a href="#myprojects">My Projects</a></li>
+				<li><a href="#myprojects">Projects</a></li>
+				<li><a href="#learning">Learning</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -25,19 +32,33 @@
 			<div>
 				<h2>Hi there! 👋 I'm Vasily</h2>
 				<p>Beginner frontend developer from Russia.</p>
-				<p>
 
-					🛠️ Tech Stack:
-				</p>
-				<ul>
-					<li>HTML5, CSS3 (Flexbox, Grid)</li>
-					<li> Responsive Web Design</li>
-					<li> Git, GitHub, GitHub Pages</li>
-					<li>Pixel-perfect layout from Figma/Pixso designs</li>
-					<li>CSS animations, transform, transition </li>
-				</ul>
+				<h3>🛠️ Tech Stack:</h3>
+				<div class="skills-container">
+					<span class="skill-badge">HTML5</span>
+					<span class="skill-badge">CSS3</span>
+					<span class="skill-badge">Flexbox</span>
+					<span class="skill-badge">Grid</span>
+					<span class="skill-badge">Responsive Design</span>
+					<span class="skill-badge">Git/GitHub</span>
+					<span class="skill-badge">GitHub Pages</span>
+					<span class="skill-badge">Figma/Pixso</span>
+					<span class="skill-badge">CSS Animations</span>
+				</div>
+
+				<div class="stats-container">
+					<div class="stat">
+						<div class="stat-number">3</div>
+						<div class="stat-label">Projects</div>
+					</div>
+					<div class="stat">
+						<div class="stat-number">HTML/CSS</div>
+						<div class="stat-label">Core Skills</div>
+					</div>
+				</div>
+
 				<h2>Contacts</h2>
-				<ul>
+				<ul class="contacts-list">
 					<li>
 						<a href="https://t.me/vasso89" target="_blank">Telegram</a>
 					</li>
@@ -56,7 +77,7 @@
 			<div class="projects-grid">
 				<div class="card">
 					<h3>Beekeeping landing</h3>
-					<p>Adaptive landing</p>
+					<p class="tech-stack">HTML5, CSS3, Flexbox, Responsive</p>
 					<img src="img/project1.png" alt="Beekeeping landing page screenshot">
 					<div class="links">
 						<a href="https://github.com/vasso89/tolyan-honey" target="_blank">Code</a>
@@ -65,16 +86,75 @@
 				</div>
 				<div class="card">
 					<h3>Lineage2 site</h3>
-					<p>Adaptive landing</p>
+					<p class="tech-stack">HTML5, CSS3, Grid, Responsive</p>
 					<img src="img/project2.png" alt="Lineage2 landing page screenshot">
 					<div class="links">
-						<a href="https://github.com/vasso89/lineage2_site " target="_blank">Code</a>
-						<a href="https://vasso89.github.io/lineage2_site " target="_blank">Demo</a>
+						<a href="https://github.com/vasso89/lineage2_site" target="_blank">Code</a>
+						<a href="https://vasso89.github.io/lineage2_site" target="_blank">Demo</a>
+					</div>
+				</div>
+				<div class="card">
+					<h3>DJ Nova Pulse</h3>
+					<p class="tech-stack">HTML5, CSS3, Flexbox, Grid, Responsive</p>
+					<img src="img/project3.png" alt="DJ Nova Pulse landing page screenshot">
+					<div class="links">
+						<a href="https://github.com/vasso89/dj-landing" target="_blank">Code</a>
+						<a href="https://vasso89.github.io/dj-landing/" target="_blank">Demo</a>
 					</div>
 				</div>
 
+			</div>
+		</section>
 
+		<section class="container" id="learning">
+			<h2>Currently Learning 🚀</h2>
+			<div class="learning-container">
+				<div class="learning-item">
+					<h3>JavaScript (ES6+)</h3>
+					<p>Moving to interactive web development</p>
+					<div class="progress-bar">
+						<div class="progress" style="width: 20%"></div>
+					</div>
+				</div>
+				<div class="learning-item">
+					<h3>DOM Manipulation</h3>
+					<p>Building dynamic user interfaces</p>
+					<div class="progress-bar">
+						<div class="progress" style="width: 15%"></div>
+					</div>
+				</div>
+				<div class="learning-item">
+					<h3>React</h3>
+					<p>Next step in my frontend journey</p>
+					<div class="progress-bar">
+						<div class="progress" style="width: 5%"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section class="container" id="about-learning">
+			<h2>About My Learning 📖</h2>
+			<div class="about-learning-content">
+				<div class="learning-path">
+					<h3>Self-Taught Developer</h3>
+					<p>I'm learning frontend development through:</p>
+					<ul class="learning-sources">
+						<li>📚 Online courses and tutorials</li>
+						<li>💻 Hands-on projects and practice</li>
+						<li>🔍 Code analysis and best practices</li>
+						<li>📖 Documentation and community resources</li>
+					</ul>
+				</div>
+				<div class="learning-goals">
+					<h3>My Path Forward</h3>
+					<ul class="goals-list">
+						<li>Master JavaScript fundamentals</li>
+						<li>Learn React and modern frameworks</li>
+						<li>Build full-stack applications</li>
+						<li>Join a development team</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 	</main>
