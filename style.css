@@ -110,10 +110,6 @@ h1 {
 	transition: all 0.3s ease;
 }
 
-h1:hover {
-	font-size: 3.7rem;
-	text-shadow: 0 0 50px rgba(0, 212, 255, 0.8), 0 0 80px rgba(0, 212, 255, 0.4);
-}
 
 h2 {
 	text-align: center;
@@ -125,6 +121,9 @@ h2 {
 	margin: 2rem;
 	
 }
+
+
+
 .navbar ul {
 	display: flex;
 	gap: 100px;
